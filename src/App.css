@@ -157,9 +157,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 8px;
-  border: 1px solid var(--border);
-  background: #fff;
+  padding: 0;
 }
 
 .field-item label {
