@@ -3,7 +3,7 @@ import Papa from 'papaparse'
 import './App.css'
 
 const DATA_URL =
-  'http://docs.google.com/spreadsheets/d/1MYw7EtNBTk13LGtnEiOHUAqXnbd6h6ucjR7B-FBBhBY/export?format=csv&gid=224609678'
+  'https://docs.google.com/spreadsheets/d/1MYw7EtNBTk13LGtnEiOHUAqXnbd6h6ucjR7B-FBBhBY/export?format=csv&gid=224609678'
 const REVIEWED_STORAGE_KEY = 'application-reviewer:reviewed:v1'
 
 function toStorageSet() {
