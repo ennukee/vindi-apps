@@ -1,0 +1,58 @@
+:root {
+  --text: #111;
+  --bg: #fff;
+  --page-bg: #5f87b6;
+  --border: #ddd;
+  --muted: #666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text);
+  background-color: var(--page-bg);
+  background-image:
+    radial-gradient(circle at 20% 25%, rgba(173, 216, 255, 0.32), transparent 42%),
+    radial-gradient(circle at 80% 20%, rgba(86, 146, 214, 0.34), transparent 46%),
+    radial-gradient(circle at 50% 80%, rgba(209, 235, 255, 0.22), transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 170% 170%, 180% 180%, 160% 160%;
+  animation: pulse-bg 12s ease-in-out infinite alternate;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 12px;
+}
+
+@keyframes pulse-bg {
+  0% {
+    background-size: 170% 170%, 180% 180%, 160% 160%;
+    background-position: 20% 20%, 80% 15%, 50% 80%;
+  }
+  50% {
+    background-size: 200% 200%, 190% 190%, 175% 175%;
+    background-position: 24% 24%, 76% 18%, 48% 76%;
+  }
+  100% {
+    background-size: 180% 180%, 210% 210%, 165% 165%;
+    background-position: 18% 22%, 82% 14%, 52% 82%;
+  }
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 600;
+}
